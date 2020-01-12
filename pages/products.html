@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    新增
+  </button>
+  <button type="button" id="deletes" class="btn btn-primary">
+    批量刪除
+  </button>
+  <div id="msg-success" class="msg alert alert-success fade" data-dismiss="alert" role="alert">
+    msg
+  </div>
+  <div id="msg-error" class="msg alert alert-warning alert-dismissible fade" data-dismiss="alert" role="alert">
+    msg
+  </div>
+  <nav id="page-navigation">
+    <ul class="pagination justify-content-center">
+    </ul>
+  </nav>
+  <div id="list">
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="productform">
+            <!-- <label for="title">title:</label>
+            <input type="text" id="title" name="title" maxlength="20">
+            <br />
+            <p>tag:</p>
+            <input type="radio" name="tag" id="t1" value="紅茶" checked>
+            <label for="t1">紅茶</label>
+            <input type="radio" name="tag" id="t2" value="綠茶">
+            <label for="t2">綠茶</label>
+            <input type="radio" name="tag" id="t3" value="烏龍茶">
+            <label for="t3">烏龍茶</label>
+            <input type="radio" name="tag" id="t4" value="東方美人茶">
+            <label for="t4">東方美人茶</label>5
+            <input type="radio" name="tag" id="t5" value="金萱/翠玉">
+            <label for="t5">金萱 / 翠玉</label>
+            <input type="radio" name="tag" id="t6" value="鐵觀音">
+            <label for="t6">鐵觀音</label>
+            <input type="radio" name="tag" id="t7" value="四季春/文山包種">
+            <label for="t7">四季春 / 文山包種</label>
+            <input type="radio" name="tag" id="t8" value="其他">
+            <label for="t8">其他</label>
+            <br />
+            <label for="classify">classify:</label>
+            <input type="text" name="classify">
+            <br />
+            <label for="unit">unit:</label>
+            <input type="text" name="unit">
+            <br />
+            <label for="price">price:</label>
+            <input type="number" name="price" max="1000000">
+            <br />
+            <label for="sTime">sTime:</label>
+            <input type="number" name="sTime" max="10">
+            <br />
+            <label for="feature">features:</label>
+            <input type="text" name="feature" maxlength="1000">
+            <br />
+            <label for="img">img:</label>
+            <input type="file" name="img" id="img">
+            <img id="preview_img" src="" alt="" width="200">
+            <br />
+            <input id="addsubmit" type="submit" value="新增"> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="submit" data-dismiss="modal">確認</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
